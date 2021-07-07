@@ -1,5 +1,6 @@
 # climatechangecuties
 # What social problem is being addressed?
+Adequate climate change curriculum/education offered to students?
 # Who is being empowered by Your mapplication?
 # What technical and ethical problems could there be in developing this tool?
 Technical | Ethical
