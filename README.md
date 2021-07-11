@@ -2,7 +2,7 @@
 # What social problem is being addressed?
 Adequate climate change curriculum/education offered to students.
 # Who is being empowered by your mapplication?
-Students at UCLA who are having issues with filing incident reports to the **UCLA Title IX Office**.
+Students at UCLA who are having issues with filing incident reports to the UCLA Title IX Office including worries with coming forward, feelings of guilt or shame, fear of retaliation, issues with investigations, nothing getting accomplished and so on.
 # What technical and ethical problems could there be in developing this tool?
 **Technical** | **Ethical**
 ------------ | -------------
