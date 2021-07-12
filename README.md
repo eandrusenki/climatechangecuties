@@ -5,6 +5,7 @@ Problems that go along with filing reports of incidents to the UCLA Title IX Off
 Students at UCLA who are having issues with filing incident reports to the UCLA Title IX Office.
 # What technical and ethical problems could there be in developing this tool?
 **Technical** | **Ethical**
+----------|----------
 Not enough people willing to participate | Keeping participation and information anonymous and private
 Visualizing data | Keeping the goal away from encouraging people to come forward
 Variety, randomness, and representation | The goal should be empowering voices not persuading them
