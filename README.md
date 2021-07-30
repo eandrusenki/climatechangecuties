@@ -10,13 +10,13 @@ Students at UCLA who are having issues with filing incident reports to the UCLA 
 * Leaflet: provides us with the map to display information/markers
 * Github: holds files, readme, and other pertinent information for the project
 * Visual Studio Code: used to code our project
-# How could this project be used in the future?
+## How could this project be used in the future?
 * Help certain offices/departments at UCLA understand how to help students.
 * Be a place where someone can hear other people's stories, in an effort to feel less alone.
 * Provide students who are struggling with resources that other students feel are useful.
 
 # Pre-Web Development
-# What technical and ethical problems could there be in developing this tool?
+## What technical and ethical problems could there be in developing this tool?
 **Technical** | **Ethical**
 ----------|----------
 Not enough people willing to participate | Keeping participation and information anonymous and private
