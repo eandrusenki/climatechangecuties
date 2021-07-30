@@ -10,3 +10,9 @@ Not enough people willing to participate | Keeping participation and information
 Visualizing data | Keeping the goal away from encouraging people to come forward
 Variety, randomness, and representation | The goal should be empowering voices not persuading them
 Wording questions properly/not place blame/make feel guilty | Not invalidating or prioritizing (creating a hierarchy) people's experiences
+#Technology used for this project:
+
+#How could this project be used in the future?
+* Help certain offices/departments at UCLA understand how to help students.
+* Be a place where someone can hear other people's stories, in an effort to feel less alone.
+* Provide students who are struggling with resources that other students feel are useful.
