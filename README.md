@@ -10,7 +10,13 @@ Not enough people willing to participate | Keeping participation and information
 Visualizing data | Keeping the goal away from encouraging people to come forward
 Variety, randomness, and representation | The goal should be empowering voices not persuading them
 Wording questions properly/not place blame/make feel guilty | Not invalidating or prioritizing (creating a hierarchy) people's experiences
-#Technology used for this project:
+
+# Technology used for this project:
+- Google Forms: where responses were collected for our survey
+- Google Forms: used to hold the responses collected from our survey
+- Leaflet: provides us with the map to display information/markers
+- Github: holds files, readme, and other pertinent information for the project
+- Visual Studio Code: used to code our project
 
 # How could this project be used in the future?
 * Help certain offices/departments at UCLA understand how to help students.
