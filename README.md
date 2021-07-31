@@ -1,6 +1,6 @@
 # wehearseebelieveyou
 
-# Table of Contents |
+Table of Contents |
 ------------ |
 General Information |
 Technologies Used |
