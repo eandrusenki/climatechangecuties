@@ -1,6 +1,6 @@
 #wehearseebelieveyou
-#Table of Contents
-First Header |
+
+Table of Contents |
 ------------ |
 Content from cell 1 |
 Content in the first column |
