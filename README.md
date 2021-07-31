@@ -8,8 +8,14 @@
 **Screenshots** |
 
 # General Information
+## About
+
+## Who is being empowered?
 
 # Technologies Used
+## Languages
+
+## Other
 
 # Features
 
