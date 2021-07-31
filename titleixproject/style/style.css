@@ -6,7 +6,7 @@ body{
         multiple rows 
         remember "1fr 1fr" means 50% 50% you should play around 
         with the 1fr to adjust! for example ".2fr .8fr" */
-    grid-template-rows: .4fr .6fr;
+    grid-template-rows: .5fr .5fr;
     grid-template-columns: 1fr 1fr; /* this creates an even two column layout*/
     /* you also needed to specify where the header should be, which
     in this case is the top row */
