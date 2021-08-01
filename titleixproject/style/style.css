@@ -13,13 +13,25 @@ body{
     grid-template-areas: "header header" "maparea sidepanel" /* this creates one row with map panel on the left and sidepanel on the right */
 }
 
+
+
+
+
 /* this is the CSS that tells the CSS to treat the "header" element 
 as the header in the "grid-template-areas"! */
-header{
-    grid-area: header;
-    background-color: rgb(222, 240, 247);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(222, 240, 247);
+  color: white;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  grid-area: head;
 }
+
+
 
 #contents{
     height: 20vh;
