@@ -104,7 +104,7 @@ button{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .background-content, .resource-content{
-  background-color: #fefefe;
+  background-color: #000000;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
