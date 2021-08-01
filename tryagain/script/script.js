@@ -5,7 +5,7 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.pn
 }).addTo(myMap)
 
 let markers = []
-let url = "https://spreadsheets.google.com/feeds/list/103F2d_EByUYXhi0SdjDdeSvjsuYzOLY7wFKFI7P02xU/ogaq09/public/values?alt=json"
+let url = "https://spreadsheets.google.com/feeds/list/1YpyAms5t_Eosfx59WGIwE7sHLnK0v6HnNKGll1_bWW0/osbpwv3/public/values?alt=json"
 fetch(url)
 	.then(response => {
 		return response.json();
