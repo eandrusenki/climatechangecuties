@@ -66,47 +66,36 @@ button {
     cursor: pointer;
   }
 
-  /* drop down button */
-  .dropbtn {
+   /* Dropdown Button */
+.dropbtn {
+  
     color: white;
-    padding: 16px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
-    border: none;
+    margin: 8px 2px;
     cursor: pointer;
   }
   
-  .dropbtn:hover, .dropbtn:focus {
-   color: white;
-  }
-  
-  #myInput {
-    box-sizing: border-box;
-    background-image: url('searchicon.png');
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  #myInput:focus {outline: 3px solid #ddd;}
-  
+  /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
   }
   
+  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f6f6f6;
-    min-width: 230px;
-    overflow: auto;
-    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
+  /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -114,6 +103,11 @@ button {
     display: block;
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
   
-  .show {display: block;}
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #ffffff;} 
