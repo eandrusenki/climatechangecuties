@@ -1,16 +1,17 @@
 body{
-    background-color: rgb(222, 240, 247);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient( 100deg, #9185bb69 10%, #6d9fdf6b 50%, #19c7e66b 100%);
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
     display:grid;
     /* you needed to add grid-template-rows to tell the page you wanted
         multiple rows 
         remember "1fr 1fr" means 50% 50% you should play around 
         with the 1fr to adjust! for example ".2fr .8fr" */
-    grid-template-rows: .1fr .9fr;
-    grid-template-columns: 1fr 1fr; /* this creates an even two column layout*/
+    grid-template-rows: .1fr .1fr;
+    grid-template-columns: .2fr .8fr; /* this creates an even two column layout*/
     /* you also needed to specify where the header should be, which
     in this case is the top row */
-    grid-template-areas: "header header" "maparea sidepanel" /* this creates one row with map panel on the left and sidepanel on the right */
+    grid-template-areas: "head head" "maparea sidepanel" /* this creates one row with map panel on the left and sidepanel on the right */
+    
 }
 
 
@@ -22,54 +23,64 @@ as the header in the "grid-template-areas"! */
 
 
 .header {
-  padding: 20px;
-  text-align: center;
-  background-color: rgb(222, 240, 247);
-  color: white;
-  font-size: 18px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  grid-area: head;
+    padding: 20px;
+    text-align: center;
+    background: hsla(251, 84%, 65%, 0.42);
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    grid-area: head;
+  }
+
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    column-gap: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    grid-template-areas: "sidebar map response";
+}
+  
 }
 
 
 
 #contents{
     height: 20vh;
-    background-color: rgb(222, 240, 247);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    
+
 
 }
 
 #mapArea{
-    height:92vh;
-    grid-area: maparea;
-    background-color: rgb(222, 240, 247);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-} 
+    height: 80vh;
+    width: 80vh;
+    grid-area: "mapArea";
+    border-radius: 10px;
+}
 
-#survey{
-    grid-area: sidepanel;
-    background-color: rgb(222, 240, 247);
-    font-family: Georgia, 'Times New Roman', Times, serif;
     
-} 
+
 button {
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 8px 2px;
+    margin: 10px 3px;
     cursor: pointer;
   }
 
    /* Dropdown Button */
 .dropbtn {
   
-    color: white;
+     border: none;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -90,7 +101,7 @@ button {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    margin: 8px 2px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -98,7 +109,7 @@ button {
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 15px 32px;
     text-decoration: none;
     display: block;
   }
@@ -110,4 +121,5 @@ button {
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #ffffff;} 
+  .dropdown:hover .dropbtn {background-color: #ddd;} 
+

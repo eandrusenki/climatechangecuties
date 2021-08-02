@@ -41,4 +41,3 @@ function processData(theData){
     formattedData.forEach(addMarker)   
    
 }
-

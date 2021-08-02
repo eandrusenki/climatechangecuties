@@ -13,43 +13,58 @@
         <!-- Leaflet's JavaScript-->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     
+        <!--GOOGLE TRANSLATE BUTTON-->
+         <div id="google_translate_element"></div>
 
+       <script type="text/javascript">
+       function googleTranslateElementInit() {
+       new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+      }
+        </script>
+         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
+
+
+</div> 
     
     </head>
 
     
     <body>
-        <header>
+      
+      <div class="header">
+            
             <h1 id="title">UCLA Title IX Stories</h1>
-            <h2>What is Title IX</h2>
-            <p>Title IX is an education amendment which prohibits discrimination based on sex assigned at birth, gender identity, sexuality, race/ethnicity, immigration status, and disabilities at federally funded education institutions. Under Title IX, acts of sexual assault, violence and harrassment are prohibited</p>
-        
+            <h2 style="font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;" >What is Title IX</h2>
+            <p style="font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;">Title IX is an education amendment which prohibits discrimination based on sex assigned at birth, gender identity, sexuality, race/ethnicity, immigration status, and disabilities at federally funded education institutions. Under Title IX, acts of sexual assault, violence and harrassment are prohibited</p>
+            
             <button> 
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSewu4hoztFfQMyi1yD_rSdIGZsnk2z25wTny6ypzPJ01T61tA/viewform">Take the Survey</a> 
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSewu4hoztFfQMyi1yD_rSdIGZsnk2z25wTny6ypzPJ01T61tA/viewform" target="_blank" rel="noopener noreferrer">Take the Survey</a> 
           </button>
           <button> 
-              <a href="https://sexualharassment.ucla.edu/resources/">UCLA's Title IX Office</a> 
-          </button>
+            <a href="https://www2.ed.gov/about/offices/list/ocr/docs/tix_dis.html" target="_blank" rel="noopener noreferrer">What is Title IX</a> 
+        </button>
           <button> 
-              <a href="https://www2.ed.gov/about/offices/list/ocr/docs/tix_dis.html">What is Title IX</a> 
+              <a href="https://sexualharassment.ucla.edu/resources/" target="_blank" rel="noopener noreferrer" >UCLA's Title IX Office</a> 
           </button>
-            <div id ="contents">
+   
                 
               <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
+                <button class="dropbtn">More Resources</button>
                 <div class="dropdown-content">
-                  <a href="https://www.cwlc.org/tag/title-ix/">CA Women's Law Center </a>
+                  <a href="https://www.cwlc.org/tag/title-ix/" target="_blank" rel="noopener noreferrer">CA Women's Law Center </a>
                   <a href="https://www.valor.us/">Valor</a>
-                  <a href="https://www.knowyourix.org/college-resources/title-ix/">Know Your IX</a>
-                  <a href="https://sexualharassment.ucla.edu/resources/resources-for-respondents">UCLA Resources</a>
+                  <a href="https://www.knowyourix.org/college-resources/title-ix/" target="_blank" rel="noopener noreferrer">Know Your IX</a>
+                  <a href="https://sexualharassment.ucla.edu/resources/resources-for-respondents" target="_blank" rel="noopener noreferrer">UCLA Resources for Respondents</a>
                 
                 </div>
-
-            </div>
+                    </div>
+                    </div>
+            
   
-        </header>
-       
+        
+        <div id="contents"></div>
+      
         <div id="mapArea"></div>
        
            
@@ -57,3 +72,4 @@
         <script src="js/script.js"></script>
     </body>
 </html> 
+
