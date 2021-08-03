@@ -43,15 +43,6 @@ as the header in the "grid-template-areas"! */
 }
   
 
-#contents{
-    height: 20vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: lightblue;
-    
-
-
-}
-
 #mapArea{
     height: 80vh;
     width: 80vh;
