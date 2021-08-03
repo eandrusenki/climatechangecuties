@@ -30,14 +30,13 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 * CSS
 
 ## Other
-* Google Forms
-* Google Sheets
-* Javascript
-* Leaflet
+* Google Forms: used to collect data from user stories and community members for our project. This data allowed us to create a project to empower community members.
+* Google Sheets: this is where we held data collected from our Google Forms survey. We could also edit the data on the spreadsheet to be able to use it to our best ability. 
+* Leaflet: where we got our map from. 
 
 # Screenshots and Features
 
-# Acknowledgements
+### Acknowledgements
 
 A huge thank you to our professor Albert Kochaphum for helping us create this project and debugging our site.
 Thank you for creating such a friendly warm working and learning enviornment during this pandemic.
