@@ -23,10 +23,6 @@ Many students struggle to come forward due to fear of the stigmatization around 
 We are hoping that anyone affiliated with UCLA (students, alumni, employees) who has reported to the UCLA Title IX Office or *felt* like they needed to, can use this project to empower themselves in multiple ways. One way being the ability to share their story and speak up, another being giving resources and hopefully making them feel like they are/can help others who have gone through similar experiences. And another is for them to provide words of encouragement for other survivors, which in tunr, can allow them to empower others as well. The most important aspect of this empowerment is that everything is anonymous.
 
 # Technologies Used
-* Google Forms
-* Google Sheets
-* Javascript
-* Leaflet
 
 ## Languages
 * HTML
@@ -34,6 +30,10 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 * CSS
 
 ## Other
+* Google Forms
+* Google Sheets
+* Javascript
+* Leaflet
 
 # Screenshots and Features
 
