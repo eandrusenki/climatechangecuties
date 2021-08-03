@@ -16,10 +16,6 @@ body{
     
 }
 
-
-
-
-
 /* this is the CSS that tells the CSS to treat the "header" element 
 as the header in the "grid-template-areas"! */
 
@@ -167,3 +163,29 @@ button {
   text-decoration: none;
   cursor: pointer;
 } 
+
+
+
+#sharedstoryResponse{
+  grid-area: sharedstory;    
+}
+#resourcesResponse{
+  grid-area: resources;
+}
+#encouragementResponse{
+  grid-area: encourage;
+}
+#responseBoxes{
+  grid-area: "sidepannel";
+}
+.response{
+  text-align: center; 
+  border: rgb(174, 140, 255);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  /* min-height: 20%; */
+  max-height: 175px;
+  overflow-y: auto;
+  padding: 5px;
+  margin-top: 1%;
