@@ -30,19 +30,16 @@ function changeDesc(obj){
   document.getElementById("encoug").innerHTML=(obj.encoug != "") ? ("\"" + obj.encoug + "\"") : "No response was provided."
 }
 function addMarker(data){
-    // console.log(data)
-    // these are the names of our fields in the google sheets
-    content = populateContent(data)
-    console.log(content)
-    var marker = L.marker([data.lat,data.lng])
-    marker = L.marker([data.lat,data.lng]).bindPopup(`<p>UCLA Affiliation: ${data.areyouaucla}</p>` +
-    `<p>Where on campus did this happen: ${data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix}</p>`+
-    + `<p>Individual's shared story: ${data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareyourstory}</p>`+ `<p>Resources that were found helpful after the incident occured:${data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareresourcesyoufoundhelpful}</p>`+ `<p>Words of encouragement for others that may be in a similar sitaution: ${data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareamessagewordsofencouragementyouhaveforothersgoingthroughthesamething}</p>`)
-    marker = marker.on('click', function(e){changeDesc(populateContent(data))})
-    marker.addTo(myMap)
-    return data.location
- }
-
+  // console.log(data)
+  // these are the names of our fields in the google sheets
+  content = populateContent(data)
+  console.log(content)
+  var marker = L.marker([data.lat,data.lng])
+  marker = L.marker([data.lat,data.lng]).bindPopup(`<p>UCLA Affiliation: ${data.areyouaucla}</p>`+ `<p>Have you ever filed with Title IV: ${data.haveyoueverfiledanincidentreporttotheuclatitleixoffice}</p>`+ `<p>Have you ever felt you needed to report:${data.haveyoueverbeeninasituationwhereyoufeltyoumayneedtofileanincidentreporttotheuclatitleixoffice}</p>`+`<p>Where on campus did this happen: ${data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix}</p>`+ `<p>How would you classify the situation of discrimination under Title IX: ${data.undertitleixhowwouldyouclassifytheincidentsituationexperiencedoncampusfiledornotdiscriminationbasedon}</p>`)
+  marker = marker.on('click', function(e){changeDesc(populateContent(data))})
+  marker.addTo(myMap)
+  return data.location
+}
 
 let url = "https://spreadsheets.google.com/feeds/list/1YpyAms5t_Eosfx59WGIwE7sHLnK0v6HnNKGll1_bWW0/osbpwv3/public/values?alt=json"
 
