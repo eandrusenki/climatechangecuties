@@ -35,8 +35,6 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 * Leaflet: where we got our map from. 
 
 # Screenshots and Features
-## Screenshots
-
 ## Features
 Our site contains a **modal** with information about our project and project topic so people may read that, but it won't be in the way of the map. There are then three buttons with additional information for readers if they choose to read. The first one takes them to the survey to allow them to take it if they have a story to share. The second takes them to the Department of Education's page on Title IX, and the next one takes them to the UCLA Title IX Office. After that, there is a drop down menu that has resources provided to us that may be useful to those who are struggling with reporting to the Title IX Office.
 
