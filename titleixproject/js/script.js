@@ -8,7 +8,7 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.pn
 function addMarker(data){
     // console.log(data)
     // these are the names of our fields in the google sheets
-    L.circleMarker([data.lat,data.lng]).addTo(myMap).bindPopup(`<p>UCLA Affiliation: ${data.areyouaucla}</p>`+ `<p>Have you ever filed with Title IV: ${data.haveyoueverfiledanincidentreporttotheuclatitleixoffice}</p>`+ `<p>Have you ever felt you needed to report:${data.haveyoueverbeeninasituationwhereyoufeltyoumayneedtofileanincidentreporttotheuclatitleixoffice}</p>`+`<p>Where on campus did this happen: ${data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix}</p>`+ `<p>How would you classify the situation of discrimination under Title IX: ${data.undertitleixhowwouldyouclassifytheincidentsituationexperiencedoncampusfiledornotdiscriminationbasedon}</p>`)
+    L.marker([data.lat,data.lng]).addTo(myMap).bindPopup(`<p>UCLA Affiliation: ${data.areyouaucla}</p>`+ `<p>Have you ever filed with Title IV: ${data.haveyoueverfiledanincidentreporttotheuclatitleixoffice}</p>`+ `<p>Have you ever felt you needed to report:${data.haveyoueverbeeninasituationwhereyoufeltyoumayneedtofileanincidentreporttotheuclatitleixoffice}</p>`+`<p>Where on campus did this happen: ${data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix}</p>`+ `<p>How would you classify the situation of discrimination under Title IX: ${data.undertitleixhowwouldyouclassifytheincidentsituationexperiencedoncampusfiledornotdiscriminationbasedon}</p>`)
     return data.location
  }
 
@@ -90,20 +90,4 @@ window.onclick = function(event) {
   }
 } 
 
-function updateAnswers(index){
-  let sharedstory = document.getElementById("sharedstoryResponse")
-  sharedstory.innerHTML += data[index].sharedstory;
-  let resources = document.getElementById("resourcesResponse")
-  resources.innerHTML += data[index].resources;
-  let encouragement = document.getElementById("encouragementResponse")
-  encouragement.innerHTML += data[index].encouragement
-}
 
-function clearAnswers(){
-  let sharedstory = document.getElementById("sharedstoryResponse")
-  sharedstory.innerHTML = "<b>Individual's shared story</b><br><br>"
-  let resources = document.getElementById("resourcesResponse")
- resources.innerHTML = "<b>>Resources they reccomend in-case of similar incident occured</b><br><br>"
-  let encouragement = document.getElementById("encouragementResponse")
-  encouragement.innerHTML = "<b>Words of encouragement provided by individual</b><br><br>"
-}
