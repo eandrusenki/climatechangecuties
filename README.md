@@ -37,5 +37,8 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 
 #Screnshots & Features
 
+#Acknowledgements
+A huge thank you to our professor Albert Kochaphum for helping us create this project and debugging our site.
+Thank you for creating such a friendly warm working and learning enviornment during this pandemic.
 
 
