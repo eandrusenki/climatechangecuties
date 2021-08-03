@@ -42,8 +42,10 @@ as the header in the "grid-template-areas"! */
 
 
 #contents {
-background-color: rgba(193, 225, 252, 0.466);
-grid-template-areas: "a b"
+background-color: rgba(255, 255, 255, 0);
+grid-template-areas: "sidepanel";
+padding: 20px;
+border-radius: 10px;
 }
 
 #mapArea{
