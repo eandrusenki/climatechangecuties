@@ -57,6 +57,7 @@ fetch(url)
 )
 
 function processData(theData){
+  
     const formattedData = [] 
     const rows = theData.feed.entry
     for(const row of rows) {
