@@ -1,6 +1,6 @@
 body{
     background-image: linear-gradient( 100deg, #9185bb69 10%, #6d9fdf6b 50%, #19c7e66b 100%);
-    font-family:  sans-serif;
+    font-family:   Trebuchet MS, sans-serif;
     text-align: center;
     display:grid;
     /* you needed to add grid-template-rows to tell the page you wanted
@@ -30,7 +30,7 @@ as the header in the "grid-template-areas"! */
     background: hsla(251, 84%, 65%, 0.42);
     color: white;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: Trebuchet MS;
     grid-area: head;
 
 }
