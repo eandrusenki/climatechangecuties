@@ -16,6 +16,7 @@ Title IX is an education amendment that prohibits the discrimination of any pers
 * Athletics
 * College Admissions
 * Mental Health Offices/Services
+
 Many students struggle to come forward due to fear of the stigmatization around these issues, fear of retaliation, embarrassment, or the hardships and difficulty with reporting to the office. The Trump Administration and Former Secretary of Education Betsy Devos’ changes to and limitations of Title IX on college campuses have made reporting and coming forward more difficult than it already was. On anonymous forums all over the internet such as the UCLA reddit page and the facebook UCLA Secrets page, you can find criticisms regarding the UCLA Title IX campus office and the way they are administered. 
 
 ## Who is being empowered?
