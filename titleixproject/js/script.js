@@ -5,10 +5,41 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.pn
 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(myMap)
 
+function populateContent(data){
+  contentParts = {
+    "atucla" : data.areyouaucla,
+    "location" : data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix,
+    "story" : data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareyourstory,
+    "resc" : data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareresourcesyoufoundhelpful,
+    "encoug" : data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareamessagewordsofencouragementyouhaveforothersgoingthroughthesamething,
+  }
+  for(part in contentParts){
+    if(contentParts[part] == ""){
+      contentParts[part] == "No response was provided for this question."
+    }
+  }
+  return contentParts
+}
+
+function changeDesc(obj){
+  console.log(obj)
+  document.getElementById("atucla").innerHTML=(obj.atucla != "") ? (obj.atucla) : "No response was provided";
+  document.getElementById("location").innerHTML=(obj.location != "") ? ("\"" + obj.location + "\"") : "No response was provided."
+  document.getElementById("story").innerHTML=(obj.filled != "") ? ("\"" + obj.filled + "\"") : "No response was provided.";
+  document.getElementById("resc").innerHTML=(obj.resc != "") ? ("\"" + obj.resc + "\"") : "No response was provided.";
+  document.getElementById("encoug").innerHTML=(obj.encoug != "") ? ("\"" + obj.encoug + "\"") : "No response was provided."
+}
 function addMarker(data){
     // console.log(data)
     // these are the names of our fields in the google sheets
-    L.marker([data.lat,data.lng]).addTo(myMap).bindPopup(`<p>UCLA Affiliation: ${data.areyouaucla}</p>`+ `<p>Have you ever filed with Title IV: ${data.haveyoueverfiledanincidentreporttotheuclatitleixoffice}</p>`+ `<p>Have you ever felt you needed to report:${data.haveyoueverbeeninasituationwhereyoufeltyoumayneedtofileanincidentreporttotheuclatitleixoffice}</p>`+`<p>Where on campus did this happen: ${data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix}</p>`+ `<p>How would you classify the situation of discrimination under Title IX: ${data.undertitleixhowwouldyouclassifytheincidentsituationexperiencedoncampusfiledornotdiscriminationbasedon}</p>`)
+    content = populateContent(data)
+    console.log(content)
+    var marker = L.marker([data.lat,data.lng])
+    marker = L.marker([data.lat,data.lng]).bindPopup(`<p>UCLA Affiliation: ${data.areyouaucla}</p>` +
+    `<p>Where on campus did this happen: ${data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix}</p>`+
+    + `<p>Individual's shared story: ${data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareyourstory}</p>`+ `<p>Resources that were found helpful after the incident occured:${data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareresourcesyoufoundhelpful}</p>`+ `<p>Words of encouragement for others that may be in a similar sitaution: ${data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareamessagewordsofencouragementyouhaveforothersgoingthroughthesamething}</p>`)
+    marker = marker.on('click', function(e){changeDesc(populateContent(data))})
+    marker.addTo(myMap)
     return data.location
  }
 
@@ -89,5 +120,3 @@ window.onclick = function(event) {
     }
   }
 } 
-
-
