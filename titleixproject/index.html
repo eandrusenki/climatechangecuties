@@ -13,8 +13,19 @@
         <!-- Leaflet's JavaScript-->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     
+        <!--GOOGLE TRANSLATE BUTTON-->
+         <div id="google_translate_element"></div>
 
+       <script type="text/javascript">
+       function googleTranslateElementInit() {
+       new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+      }
+        </script>
+         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
+
+
+</div> 
     
     </head>
 
@@ -26,50 +37,42 @@
 
 
     <body>
-        <header>
-
-             <!-- Added Google Translate Button  -->
-            <div id="google_translate_element">
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement(
-                    {pageLanguage: 'en'},
-                    'google_translate_element');
-            }
-            </script>
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
-        </div>
-        
+      
+      <div class="header">
+            
             <h1 id="title">UCLA Title IX Stories</h1>
-            <h2>What is Title IX</h2>
-            <p>Title IX is an education amendment which prohibits discrimination based on sex assigned at birth, gender identity, sexuality, race/ethnicity, immigration status, and disabilities at federally funded education institutions. Under Title IX, acts of sexual assault, violence and harrassment are prohibited</p>
-            <p2> More About Title IX </p2>
-            <ul>
-              <li><a href="https://www2.ed.gov/about/offices/list/ocr/docs/tix_dis.html">What is Title IX</a></li>
-              <li><a href="https://sexualharassment.ucla.edu/">UCLA's Title IX Office</a></li>
-            </ul>
-
-            <div id ="contents">
+            <p style="font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;">by Liz Andrusenki and Irvin Ramirez</p>
+            
+            <button> 
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSewu4hoztFfQMyi1yD_rSdIGZsnk2z25wTny6ypzPJ01T61tA/viewform" target="_blank" rel="noopener noreferrer">Take the Survey</a> 
+          </button>
+          <button> 
+            <a href="https://www2.ed.gov/about/offices/list/ocr/docs/tix_dis.html" target="_blank" rel="noopener noreferrer">What is Title IX</a> 
+        </button>
+          <button> 
+              <a href="https://sexualharassment.ucla.edu/resources/" target="_blank" rel="noopener noreferrer" >UCLA's Title IX Office</a> 
+          </button>
+   
                 
-                <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Open Modal</button>
-    
-                 <!-- The Modal -->
-                <div id="myModal" class="modal">
-    
-                <!-- Modal content -->
-                 <div class="modal-content">
-             <span class="close">&times;</span>
-                <p> TW: This site may discuss and display sensitive topics such as sexual assault, acts of discrimination, and other stories that may be difficult to read. </p>
-             </div>
-            </div>
-    
+              <div class="dropdown">
+                <button class="dropbtn">More Resources</button>
+                <div class="dropdown-content">
+                  <a href="https://www.cwlc.org/tag/title-ix/" target="_blank" rel="noopener noreferrer">CA Women's Law Center </a>
+                  <a href="https://www.valor.us/">Valor</a>
+                  <a href="https://www.knowyourix.org/college-resources/title-ix/" target="_blank" rel="noopener noreferrer">Know Your IX</a>
+                  <a href="https://sexualharassment.ucla.edu/resources/resources-for-respondents" target="_blank" rel="noopener noreferrer">UCLA Resources for Respondents</a>
                 
-        </header>
-       
-        <div id="mapArea"></div>
+                </div>
+                    </div>
+                    </div>
+            
+  
         
-
+        <div id="contents"></div>
+      
+        <div id="mapArea"></div>
+       
+           
         
         <script src="js/script.js"></script>
     </body>
