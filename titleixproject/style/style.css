@@ -1,18 +1,18 @@
 body{
-    background-image: linear-gradient( 100deg, #9185bb69 10%, #6d9fdf6b 50%, #19c7e66b 100%);
-    font-family:   Trebuchet MS, sans-serif;
-    text-align: center;
-    display:grid;
-    /* you needed to add grid-template-rows to tell the page you wanted
-        multiple rows 
-        remember "1fr 1fr" means 50% 50% you should play around 
-    grid-template-rows: .1fr .1fr;
-    grid-template-columns: fit-content(8ch) fit-content(8ch) 1fr; /* this creates an even two column layout*/    /* you also needed to specify where the header should be, which
-    in this case is the top row */
-    grid-template-areas: "head head" "maparea sidepanel" ;/* this creates one row with map panel on the left and sidepanel on the right */
-    z-index: 0;
-    
-    
+  background-image: linear-gradient( 100deg, #9185bb69 10%, #6d9fdf6b 50%, #19c7e66b 100%);
+  font-family:   Trebuchet MS, sans-serif;
+
+  display:grid;
+  /* you needed to add grid-template-rows to tell the page you wanted
+      multiple rows 
+      remember "1fr 1fr" means 50% 50% you should play around 
+  grid-template-rows: .1fr .1fr;
+  grid-template-columns: fit-content(8ch) fit-content(8ch) 1fr; /* this creates an even two column layout*/    /* you also needed to specify where the header should be, which
+  in this case is the top row */
+  grid-template-areas: "head head" "maparea sidepanel" ;/* this creates one row with map panel on the left and sidepanel on the right */
+  z-index: 0;
+  
+  
 }
 
 /* this is the CSS that tells the CSS to treat the "header" element 
@@ -20,100 +20,104 @@ as the header in the "grid-template-areas"! */
 
 
 .header {
-    padding: 20px;
-    text-align: center;
-    background: hsla(251, 84%, 65%, 0.42);
-    color: white;
-    font-size: 18px;
-    font-family: Trebuchet MS;
-    grid-area: head;
-    border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: hsla(251, 84%, 65%, 0.42);
+  color: white;
+  font-size: 18px;
+  font-family: Trebuchet MS;
+  grid-area: head;
+  border-radius: 10px;
 
 }
 
-#wrapper{
-    display: grid;
-    grid-template-columns: .5fr 1fr .5fr;
-    column-gap: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    grid-template-areas: "sidebar map response";
-}
-  
+/* #wrapper{
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr;
+  column-gap: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  grid-template-areas: "sidebar map response";
+} */
 
+
+#contents {
+background-color: rgba(193, 225, 252, 0.466);
+grid-template-areas: "a b"
+}
 
 #mapArea{
-    height: 80vh;
-    width: 80vh;
-    grid-area: "maparea";
-    border-radius: 10px;
-    
+  height: 80vh;
+  width: 80vh;
+  grid-area: "maparea";
+  border-radius: 10px;
+  
 }
 
-    
+  
 
 button {
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 3px;
-    cursor: pointer;
-    border-radius: 10px;
-  
-  }
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 3px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
 
 
-  
- /* Dropdown Button */
- .dropbtn {
 
-    border: none;
-   color: black;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 10px 3px;
-   cursor: pointer;
-   border-radius: 10px;
-   
- }
+/* Dropdown Button */
+.dropbtn {
+
+  border: none;
+ color: black;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 10px 3px;
+ cursor: pointer;
+ border-radius: 10px;
+ 
+}
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #fefefe;
+background-color: #fefefe;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  font-size: 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 99999;
-  border-radius: 10px;
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+font-size: 16px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 99999;
+border-radius: 10px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-radius: 10px;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+border-radius: 10px;
 }
 
 /* Change color of dropdown links on hover */
@@ -127,46 +131,45 @@ button {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 99999; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  position: absolute; 
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 99999; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+position: absolute; 
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-  color: blacK
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 50%; /* Could be more or less, depending on screen size */
+color: blacK
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+color: black;
+text-decoration: none;
+cursor: pointer;
 } 
 
 .sidepanel { 
-  position: absolute; 
-  z-index: 5; 
+position: absolute; 
+z-index: 5; 
 }
-
