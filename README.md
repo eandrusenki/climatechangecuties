@@ -35,7 +35,7 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 
 ## Other
 
-#Screnshots and Features
+#Screenshots and Features
 
 #Acknowledgements
 
