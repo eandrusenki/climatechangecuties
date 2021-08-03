@@ -89,3 +89,21 @@ window.onclick = function(event) {
     }
   }
 } 
+
+function updateAnswers(index){
+  let sharedstory = document.getElementById("sharedstoryResponse")
+  sharedstory.innerHTML += data[index].sharedstory;
+  let resources = document.getElementById("resourcesResponse")
+  resources.innerHTML += data[index].resources;
+  let encouragement = document.getElementById("encouragementResponse")
+  encouragement.innerHTML += data[index].encouragement
+}
+
+function clearAnswers(){
+  let sharedstory = document.getElementById("sharedstoryResponse")
+  sharedstory.innerHTML = "<b>Individual's shared story</b><br><br>"
+  let resources = document.getElementById("resourcesResponse")
+ resources.innerHTML = "<b>>Resources they reccomend in-case of similar incident occured</b><br><br>"
+  let encouragement = document.getElementById("encouragementResponse")
+  encouragement.innerHTML = "<b>Words of encouragement provided by individual</b><br><br>"
+}
