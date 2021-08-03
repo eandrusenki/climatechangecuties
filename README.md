@@ -1,24 +1,46 @@
 # wehearseebelieveyou
 
-**Table of Contents** |
+**Table of Contents**|
 ------------ |
-**General Information** |
-**Technologies Used** |
-**Features** |
-**Screenshots** |
+**General Information**|
+**Technologies Used**|
+**Features**|
+**Screenshots**|
 
 # General Information
 ## About
+Title IX is an education amendment that prohibits the discrimination of any person based on sex, gender, sexual orientation, nationality, immigration status, race or disabilities, by an educational institution that is federally funded. Under Title IX sexual assualt and acts of sexual violence are also prohibited. Many campuses have Title IX offices that deal with these issues and they happen in all types of circumstances on campuses like UCLA including:
+* In the classroom
+* Housing Offices
+* Financial Aid
+* Athletics
+* College Admissions
+* Mental Health Offices/Services
+
+Many students struggle to come forward due to fear of the stigmatization around these issues, fear of retaliation, embarrassment, or the hardships and difficulty with reporting to the office. The Trump Administration and Former Secretary of Education Betsy Devos’ changes to and limitations of Title IX on college campuses have made reporting and coming forward more difficult than it already was. On anonymous forums all over the internet such as the UCLA reddit page and the facebook UCLA Secrets page, you can find criticisms regarding the UCLA Title IX campus office and the way they are administered. 
 
 ## Who is being empowered?
-We are hoping that anyone affiliated with UCLA (students, alumni, employees) can use this project to empower themselves in multiple ways. One way being the ability to share their story, another being giving resources and hopefully making them feel like they are/can help others who have gone through similar experiences. 
+We are hoping that anyone affiliated with UCLA (students, alumni, employees) who has reported to the UCLA Title IX Office or *felt* like they needed to, can use this project to empower themselves in multiple ways. One way being the ability to share their story and speak up, another being giving resources and hopefully making them feel like they are/can help others who have gone through similar experiences. And another is for them to provide words of encouragement for other survivors, which in tunr, can allow them to empower others as well. The most important aspect of this empowerment is that everything is anonymous.
+
 # Technologies Used
+
 ## Languages
-The main languages used for this project were HTML, CSS, and JavaScript. 
+* HTML
+* JavaScript
+* CSS
+
 ## Other
+* Google Forms: used to collect data from user stories and community members for our project. This data allowed us to create a project to empower community members.
+* Google Sheets: this is where we held data collected from our Google Forms survey. We could also edit the data on the spreadsheet to be able to use it to our best ability. 
+* Leaflet: where we got our map from. 
 
-# Features
+# Screenshots and Features
+## Features
+Our site contains a **modal** with information about our project and project topic so people may read that, but it won't be in the way of the map. There are then three buttons with additional information for readers if they choose to read. The first one takes them to the survey to allow them to take it if they have a story to share. The second takes them to the Department of Education's page on Title IX, and the next one takes them to the UCLA Title IX Office. After that, there is a drop down menu that has resources provided to us that may be useful to those who are struggling with reporting to the Title IX Office.
 
-# Screenshots
+#### Acknowledgements
+
+A huge thank you to our professor Albert Kochaphum for helping us create this project and debugging our site.
+Thank you for creating such a friendly warm working and learning enviornment during this pandemic.
 
 
