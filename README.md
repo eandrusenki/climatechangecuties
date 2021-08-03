@@ -24,7 +24,11 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 
 # Technologies Used
 ## Languages
-The main languages used for this project were HTML, CSS, and JavaScript. 
+* Google Forms
+* Google Sheets
+* Javascript
+* Leaflet
+
 ## Other
 
 # Features
