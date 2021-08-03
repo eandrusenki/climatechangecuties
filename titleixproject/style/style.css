@@ -42,9 +42,10 @@ as the header in the "grid-template-areas"! */
 
 
 #contents {
-background-color: white;
+background-color: rgba(193, 225, 252, 0.466);
 grid-template-areas: "a b"
 }
+
 #mapArea{
   height: 80vh;
   width: 80vh;
