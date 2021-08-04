@@ -1,10 +1,10 @@
 const myMap = L.map('mapArea').setView([34.0709, -118.444], 6);
-let Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-	maxZoom: 16
-});
-Esri_WorldGrayCanvas.addTo(myMap);
-let url = "https://spreadsheets.google.com/feeds/list/1ZH2-pBKLWZEDFkV90ECcUX5HMw4P-8vpKjDxNs3wnMc/okrozsk/public/values?alt=json"
+
+let Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+	maxZoom: 20,
+	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+})
+Stadia_AlidadeSmooth.addTo(myMap)
 
 function populateContent(data){
   contentParts = {
@@ -12,7 +12,7 @@ function populateContent(data){
     "location" : data.whereoncampusdidyouexperienceissueswarrantinghelpundertitleix,
     "story" : data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareyourstory,
     "resc" : data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareresourcesyoufoundhelpful,
-    "encoug" : data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareamessagewordsofencouragementyouhaveforothersgoingthroughthesamething
+    "encoug" : data.reminderthisentiresurveyisanonymousifyoufeelcomfortablepleaseshareamessagewordsofencouragementyouhaveforothersgoingthroughthesamething,
   }
   for(part in contentParts){
     if(contentParts[part] == ""){
@@ -42,7 +42,7 @@ function addMarker(data){
   return data.location
 }
 
-let url = "https://spreadsheets.google.com/feeds/list/1YpyAms5t_Eosfx59WGIwE7sHLnK0v6HnNKGll1_bWW0/osbpwv3/public/values?alt=json"
+const url = "https://spreadsheets.google.com/feeds/list/1YpyAms5t_Eosfx59WGIwE7sHLnK0v6HnNKGll1_bWW0/osbpwv3/public/values?alt=json"
 
 fetch(url)
 	.then(response => {
