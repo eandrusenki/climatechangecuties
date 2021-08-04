@@ -27,7 +27,7 @@ function changeDesc(obj){
   console.log(obj)
   document.getElementById("atucla").innerHTML=(obj.atucla != "") ? (obj.atucla) : "No response was provided";
   document.getElementById("location").innerHTML=(obj.location != "") ? ("\"" + obj.location + "\"") : "No response was provided."
-  document.getElementById("story").innerHTML=(obj.story != "") ? ("\"" + obj.filled + "\"") : "No response was provided.";
+  document.getElementById("story").innerHTML=(obj.story != "") ? ("\"" + obj.story + "\"") : "No response was provided.";
   document.getElementById("resc").innerHTML=(obj.resc != "") ? ("\"" + obj.resc + "\"") : "No response was provided.";
   document.getElementById("encoug").innerHTML=(obj.encoug != "") ? ("\"" + obj.encoug + "\"") : "No response was provided."
 }
