@@ -35,7 +35,7 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 * Leaflet: where we got our map from. 
 
 # Screenshots and Features
-## Screenshota
+## Screenshots
 https://github.com/eandrusenki/wehearseebelieveyou/blob/main/siteheader.png
 https://github.com/eandrusenki/wehearseebelieveyou/blob/main/sitedropdown.png
 https://github.com/eandrusenki/wehearseebelieveyou/blob/main/siteresponses.png
