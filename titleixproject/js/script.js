@@ -1,10 +1,9 @@
 const myMap = L.map('mapArea').setView([34.0709, -118.444], 6);
 
-let Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
 	maxZoom: 20,
 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-});
-Stadia_AlidadeSaddTo(myMap)
+}).addTo(myMap)
 
 function populateContent(data){
   contentParts = {
@@ -26,7 +25,7 @@ function changeDesc(obj){
   console.log(obj)
   document.getElementById("atucla").innerHTML=(obj.atucla != "") ? (obj.atucla) : "No response was provided";
   document.getElementById("location").innerHTML=(obj.location != "") ? ("\"" + obj.location + "\"") : "No response was provided."
-  document.getElementById("story").innerHTML=(obj.story != "") ? ("\"" + obj.story + "\"") : "No response was provided.";
+  document.getElementById("story").innerHTML=(obj.story != "") ? ("\"" + obj.filled + "\"") : "No response was provided.";
   document.getElementById("resc").innerHTML=(obj.resc != "") ? ("\"" + obj.resc + "\"") : "No response was provided.";
   document.getElementById("encoug").innerHTML=(obj.encoug != "") ? ("\"" + obj.encoug + "\"") : "No response was provided."
 }
