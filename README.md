@@ -47,7 +47,7 @@ We are hoping that anyone affiliated with UCLA (students, alumni, employees) who
 <img src="https://github.com/eandrusenki/wehearseebelieveyou/blob/main/Screenshot%2016.png">
 
 * The button on the far right side there is a button named "Other Resouces" which provides additional linked resouces for those who are seeking help within Tittle IX.
-<img src="">
+<img src="https://github.com/eandrusenki/wehearseebelieveyou/blob/main/Screenshot%2017.png">
 
 * On the left-hand side, if a location marker is clicked on it will display basic information regarding the Tittle IX survey
 <img src="https://github.com/eandrusenki/wehearseebelieveyou/blob/main/Screenshot%2018.png">
